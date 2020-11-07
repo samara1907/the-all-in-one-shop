@@ -1,3 +1,4 @@
+import React, {createRef} from 'react';
 import './App.css';
 import Home from './components/Home/Home';
 import {
@@ -12,9 +13,13 @@ import Register from './components/Register/Register';
 import { Component } from 'react';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.wrapper = React.createRef();
+  }
   render(){
     return (
-      <Router useRef={()=> {"/the-all-in-one-shop"}}>
+      <Router ref={this.wrapper}>
       <div className="App">
       <div>
             <header className="bg-white black-80 tc pv4 avenir">
