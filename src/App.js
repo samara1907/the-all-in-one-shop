@@ -14,7 +14,7 @@ import { Component } from 'react';
 class App extends Component {
   render(){
     return (
-      <Router basename="/the-all-in-one-shop">
+      <Router basename="/the-all-in-one-shop/">
       <div className="App">
       <div>
             <header className="bg-white black-80 tc pv4 avenir">
