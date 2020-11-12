@@ -1,6 +1,7 @@
 {
   "name": "shop",
   "version": "0.1.0",
+  "homepage": "https://github.com/samara1907/the-all-in-one-shop.git",
   "private": true,
   "dependencies": {
     "@assenti/rui-components": "^0.8.3",
