@@ -2,11 +2,11 @@ import CardList from '../CardList/CardList';
 import {data} from '../../data';
 import Footer from '../Footer/Footer';
 
-  function Home() {
+  function Home({onRouteChange}) {
     return (
       <div>
         <div>
-        <CardList data={data}/>
+        <CardList onRouteChange={onRouteChange} data={data}/>
         </div>
         <Footer/>
       </div>

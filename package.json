@@ -1,6 +1,5 @@
 {
   "name": "shop",
-  "homepage": "https://github.com/samara1907/the-all-in-one-shop.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

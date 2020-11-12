@@ -1,11 +1,8 @@
 import Footer from '../Footer/Footer';
 import './Register.css';
-import {
-    Link
-  } from "react-router-dom";
 
 
-const Register = () =>{
+const Register = ({onRouteChange}) =>{
     return(
         <div>
             <form action=".">
@@ -23,12 +20,12 @@ const Register = () =>{
                 <label htmlFor="psw-repeat"><b>Repeat Password</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required/>
                 <hr/>
-                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <p>By creating an account you agree to our <a href="https://www.google.com/">Terms & Privacy</a>.</p>
 
                 <button type="submit" className="registerbtn">Register</button>
             </div>
             <div className="container signin">
-                <p>Already have an account? <Link to={"/Login"}>Sign in</Link>.</p>
+                <p>Already have an account? <button className="f6  br-pill ba ph4 pv2 mb2 dib black pointer" onClick={()=>onRouteChange('/login')}>Sign in</button></p>
             </div>
             </form>
             <Footer/>

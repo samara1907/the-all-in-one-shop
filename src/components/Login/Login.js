@@ -1,11 +1,9 @@
 import Footer from '../Footer/Footer';
 import './Login.css';
-import {
-    Link
-  } from "react-router-dom";
 
 
-const Login = () =>{
+
+const Login = ({onRouteChange}) =>{
     return(
             <div>
             <div className="container">
@@ -45,10 +43,10 @@ const Login = () =>{
             <div className="bottom-container">
             <div className="row">
                 <div className="col">
-                <Link to={"register"} style={{color:'white'}} className="btn">Sign up</Link>
+                <p onClick={()=>onRouteChange('/register')} style={{color:'white'}} className="btn">Sign up</p>
                 </div>
                 <div className="col">
-                <a href="#" style={{color:'white'}} className="btn">Forgot password?</a>
+                <a href="https://www.google.com/" style={{color:'white'}} className="btn">Forgot password?</a>
                 </div>
             </div>
             </div>
